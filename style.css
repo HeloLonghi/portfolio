@@ -1,0 +1,200 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/*======================================================================
+                    GERAL
+======================================================================*/
+html{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    font-size: calc(10px + 1vw);
+}
+a{
+    color: black;
+    text-decoration: none;
+}
+main{
+	margin: 0 15vw 0 15vw;
+}
+
+/*======================================================================
+                    TOPO
+======================================================================*/
+header {
+	margin: 5vw 5vw 5vw 5vw;
+}
+header nav ul {
+    display: flex;
+    justify-content: right;
+}
+header nav ul li {
+	margin: 0 10px 0 10px;
+}
+header nav ul li.atual a{
+	color: #ff6464;
+}
+
+/*======================================================================
+                    CONTEÚDO - WORKS
+======================================================================*/
+
+main.works h1{
+	font-size: 1.5rem;
+}
+main.works section{
+	border-bottom: 1px solid gray;
+	padding: 0 0 4vw 0;
+}
+main.works section:last-child{
+	border: none;
+}
+main.works section h2{
+	font-size: 1rem;
+	margin: 2vw 0 0 0;
+	font-weight: bold;
+}
+main.works section p{
+	margin: 1.5vw 0 0 0;
+}
+main.works section p span{
+	background: #ff6464;
+	border-radius: 20px;
+	color:white;
+	padding: 3px 10px 3px 10px;
+}
+
+/*======================================================================
+                     CONTEÚDO - HOME PAGE
+======================================================================*/
+
+main section.banner {
+	display: flex;
+	margin: 10vw 0 1vw 0;
+}
+section.banner h1 {
+	font-weight: bold;
+	font-size: 2rem;
+
+}
+section.banner p {
+	padding: 1.5vw 5vw 1.5vw 0;
+}
+section.banner button {
+	background-color: #ff6464;
+	color: white;
+	padding: 10px 15px 10px 15px;
+	border: none;
+	font-size: 1rem;
+}
+section.rt-post{
+	background-color: #b0ddeb;
+	padding: 1vw 2vw 1vw 2vw;
+}
+section.rt-post h2 {
+	font-size: 1.5rem;
+	margin: 2vw 2vw 2vw 2vw;
+}
+section.rt-post ul {
+	display: flex;
+}
+section.rt-post ul li {
+	background-color: white;
+	margin: 0 1.4vw 0 0;
+	padding: 1vw 1vw 1vw 1vw;
+	border-radius: 2px;
+}
+section.rt-post ul li h3 {
+	font-weight: bold;
+	font-size: 1.3rem;
+	margin: 1vw 0 2vw 0;
+}
+section.rt-post ul li p {
+	margin: 2vw 0vw 2vw 0vw;
+}
+section.ft-works h2 {
+	margin: 2vw 5vw 2vw 5vw;
+	font-size: 1.5rem;
+}
+section.ft-works ul {
+	margin: 2vw 5vw 2vw 5vw ;
+	display: flex;
+} 
+section.ft-works ul li h3 {
+	font-weight: bold;
+	margin: 1.5vw 1vw 1.5vw 1vw;
+	font-size: 1.3rem;
+}
+section.ft-works ul li p {
+	margin: 1vw 1vw 1vw 1vw;
+}
+section.ft-works ul li p.categories {
+	color: gray;
+}
+section.ft-works ul li p span {
+	background: #142850;
+	border-radius: 20px;
+	color:white;
+	font-weight: bold;
+	padding: 3px 10px 3px 10px;
+}
+/*======================================================================
+                    FOOTER
+======================================================================*/
+
+footer{
+	text-align: center;
+	margin: 10vw 0 2vw 0;
+}
+footer ul {
+	display: flex;
+	justify-content: center;
+}
+footer ul li {
+	margin: 0 20px 20px 20px;
+	font-size: 2rem;
+}
